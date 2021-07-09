@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(115deg,
+            rgba(142, 228, 175, 0.5),
+            rgba(136, 136, 206, 0.5)), url("https://source.unsplash.com/collection/4011708");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.quote-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+#new-quote {
+    font-family: 'Montserrat', sans-serif;
+}
