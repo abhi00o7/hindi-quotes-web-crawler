@@ -2,7 +2,8 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 # crawl to page with requests
-url = "'https://www.digitalalia.in/2020/01/motivational-shayari-hindi.html"
+# url = "'https://www.digitalalia.in/2020/01/motivational-shayari-hindi.html"
+url = "https://www.digitalalia.in/2019/10/suvichar-hindi.html"
 r = requests.get(url)
 
 # parse the output with html parser
@@ -34,4 +35,4 @@ dataFrame = pd.DataFrame(hindiQuotes)
 
 print(dataFrame)
 # save to json file
-dataFrame.to_json("hindiQuotes.json", orient="records", force_ascii = False)
+dataFrame.to_json("hindiMotivationalQuotes.json", orient="records", force_ascii = False)
