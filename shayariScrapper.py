@@ -19,9 +19,7 @@ def shayariScrapper():
         quotes = soup.find_all('blockquote', attrs={'class': 'tr_bq'})
 
         # get the length
-        print('Total Number of Cards Found:', len(quotes))
-
-        count = 1
+        print('Total Number of Quote(s) Found:', len(quotes))
 
         # array to store the quotes
         hindiQuotes = []
