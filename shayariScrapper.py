@@ -3,8 +3,8 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 # crawl to page with requests
-r = requests.get(
-    'https://www.digitalalia.in/2020/01/motivational-shayari-hindi.html')
+url = "'https://www.digitalalia.in/2020/01/motivational-shayari-hindi.html"
+r = requests.get(url)
 
 # parse the output with html parser
 soup = BeautifulSoup(r.text, 'html.parser')
