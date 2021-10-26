@@ -15,7 +15,7 @@ def shayariScrapper():
         soup = BeautifulSoup(r.text, 'html.parser')
 
         # filter all the required attributes
-        # need to be changed for diffrent websites a/c page structure.
+        # need to be changed for diffrent webpage structure.
         quotes = soup.find_all('blockquote', attrs={'class': 'tr_bq'})
 
         # get the length
